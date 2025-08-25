@@ -10,7 +10,7 @@ function dbConnexion() {
         //  Identifiant de connexion
     $username = "root";
         //  password laptop : "*KLp4osj&3PC!29^$^tq%64Q7z7$2i$^"
-    $password = "pistache";
+    $password = "";
         // port
     $port= 80;
         // charset
