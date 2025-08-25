@@ -41,12 +41,12 @@
                     <label> Disponible : <?= ($livre['Disponibilite'] == 1 ? "Oui" : "Non") ?></label>
                     </div>
                     <div class = "">
-                    <a class="" href="voir.php?id=<?= ($livre['id']) ?>">Voir</a>
+                    <a class="" href="voir.php?ID=<?= ($livre['ID']) ?>">Voir</a>
                     <a class="" href="../config/edit.php?id=<?= ($livre['ID']) ?>">Modifier</a>
-                    <a class="" href="delete.php?id=<?= ($livre['ID']) ?>">Supprimer</a>
+                    <a class="" href="delete.php?ID=<?= ($livre['ID']) ?>">Supprimer</a>
                     </div>
 
-            </li>
+            </li> 
          <?php endforeach; ?>
      </ul>
  </div>
