@@ -12,7 +12,7 @@ function dbConnexion() {
         //  password laptop : "*KLp4osj&3PC!29^$^tq%64Q7z7$2i$^"
     $password = "";
         // port
-    $port= 80;
+    $port= 3306;
         // charset
     $charset= "utf8mb4";
 
