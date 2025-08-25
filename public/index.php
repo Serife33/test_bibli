@@ -22,7 +22,7 @@
 </head>
 <body>
     <?php
-    //   include '../includes/header.php';
+      include '../includes/header.php';
     ?>
     <div class="Container">
           <h2> Tous les livres </h2>
@@ -35,15 +35,15 @@
             <li>
                  <!-- intégration des chacune des valeurs contenues dans la table tasks pour une tâche donnée -->
                     <h3><?= htmlspecialchars($livre['Titre']) ?></h3>
-                     <div>
-                    <label class="" > <?= htmlspecialchars($livre['Auteur']) ?></label>
+                     <div class="detailsBook" >
+                    <label class="" > Auteur : <?= htmlspecialchars($livre['Auteur']) ?></label>
                     <label class=""> Année : <?= ($livre['Annee']) ?></label>
                     <label> Disponible : <?= ($livre['Disponibilite'] == 1 ? "Oui" : "Non") ?></label>
                     </div>
-                    <div class = "">
-                    <a class="" href="voir.php?ID=<?= ($livre['ID']) ?>">Voir</a>
-                    <a class="" href="../config/edit.php?id=<?= ($livre['ID']) ?>">Modifier</a>
-                    <a class="" href="delete.php?ID=<?= ($livre['ID']) ?>">Supprimer</a>
+                    <div class = "button">
+                    <a class="consult" href="voir.php?ID=<?= ($livre['ID']) ?>">Voir</a>
+                    <a class="edit" href="../config/edit.php?id=<?= ($livre['ID']) ?>">Modifier</a>
+                    <a class="delete" href="delete.php?ID=<?= ($livre['ID']) ?>">Supprimer</a>
                     </div>
 
             </li> 
