@@ -42,8 +42,8 @@
                     </div>
                     <div class = "">
                     <a class="" href="voir.php?id=<?= ($livre['id']) ?>">Voir</a>
-                    <a class="" href="../config/edit.php?id=<?= ($livre['id']) ?>">Modifier</a>
-                    <a class="" href="../config/delete.php?id=<?= ($livre['id']) ?>">Supprimer</a>
+                    <a class="" href="../config/edit.php?id=<?= ($livre['ID']) ?>">Modifier</a>
+                    <a class="" href="delete.php?id=<?= ($livre['ID']) ?>">Supprimer</a>
                     </div>
 
             </li>
