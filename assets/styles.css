@@ -5,31 +5,31 @@
     font-family: "Segoe UI", Tahoma, sans-serif;
 }
 
-body {
-    background-color: #f5f7fa;
-    color: #333;
-    line-height: 1.6;
-}
+
 
 /* ---------- HEADER ---------- */
 header {
     background-color: #2c3e50;
     color: white;
-    padding: 15px 30px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
+    padding: 3% ;
+    
 }
 
 header h1 {
-    font-size: 1.5em;
+    font-size: 35px;
+}
+
+nav > ul > li {
+    list-style: none;
 }
 
 nav a {
     color: white;
     text-decoration: none;
-    margin-left: 20px;
-    font-weight: 500;
+    font-weight: bold;
 }
 
 nav a:hover {
@@ -37,10 +37,16 @@ nav a:hover {
 }
 
 /* ---------- CONTENU GLOBAL ---------- */
+body {
+    background-color: #f5f7fa;
+    color: #333;
+    
+
+}
 .container {
     width: 90%;
     max-width: 1200px;
-    margin: 20px auto;
+
     padding: 20px;
     background: white;
     border-radius: 8px;
@@ -49,10 +55,12 @@ nav a:hover {
 
 /* ---------- TITRES ---------- */
 h2 {
-    margin-bottom: 15px;
+  
     color: #2c3e50;
-    border-left: 5px solid #2980b9;
-    padding-left: 10px;
+   
+   margin: 2% 0 2% 11%;
+   font-size: 25px;
+
 }
 
 
@@ -66,25 +74,21 @@ h2 {
     box-shadow: 0 4px 15px rgba(0,0,0,0.05);
 }
 
-h2 {
-    text-align: left;
-    font-size: 30px;
-    color: #222;
-    margin-bottom: 20px;
-}
+
 
 .books-list {
     list-style: none;
     display: flex;
     flex-direction: column;
+    width: 75%;
     padding: 0;
-    margin: 0%; 
+    margin: 0 0 0 10%; 
 }
 
 .books-list > li  {
     padding: 12px 15px;
     margin-bottom: 10px;
-    background-color: #f5f6f8;
+    background-color: #c0cbe1;
     border-radius: 6px;
     transition: background-color 0.2s ease;
     list-style: none;
@@ -94,19 +98,61 @@ h2 {
     padding: 2%;
 }
 
+.detailsBook {
+    display: flex;
+    flex-direction: column;
+   
+}
+
+.button {
+ display: flex;
+ justify-content: space-around;
+ align-items: center;
+ flex-direction: row;
+ margin-top: 2%;
+
+}
 
 .consult {
    
     background-color: #0077cc;
     border-radius: 20px;
     color: #f5f6f8 ;
-    padding: 7px 35px;
+    padding: 7px 50px;
     font-size: 15px;
     border: none;
     text-decoration: none;
     text-align: center;
-    margin: 2% 0 1% 45%;
-    width: 12%;
+    font-weight: bold;
+  
+
+}
+
+.edit {
+   
+    background-color: #25c117;
+    border-radius: 20px;
+    color: #f5f6f8 ;
+    padding: 7px 40px;
+    font-size: 15px;
+    font-weight: bold;
+    border: none;
+    text-decoration: none;
+  
+}
+
+.delete {
+   
+    background-color: #ef0f0f;
+    border-radius: 20px;
+    color: #f5f6f8 ;
+    padding: 7px 35px;
+    font-size: 15px;
+    border: none;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+   
 
 }
 
