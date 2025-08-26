@@ -13,7 +13,7 @@
     }
 
     // requête préparée
-    $stmt = $pdo->prepare("SELECT * FROM livres WHERE ID = : ID");
+    $stmt = $pdo->prepare("SELECT * FROM livres WHERE ID = :ID");
     $stmt->execute(['ID' => $id]);
     $livre = $stmt->fetch(PDO::FETCH_ASSOC);
 
@@ -27,13 +27,23 @@
 <head>
     <meta charset="UTF-8">
     <title><?= htmlspecialchars($livre['Titre']); ?></title>
+    <link rel="stylesheet" href="../assets/styles.css">
 </head>
     <body>
-        <h1><?= htmlspecialchars($livre['Titre']); ?></h1>
+        <?php
+      include '../includes/header.php';
+    ?>
+        <div class="detailContainer">
+        <h2><?= htmlspecialchars($livre['Titre']); ?></h2>
         <p><strong>Auteur:</strong> <?= htmlspecialchars($livre['Auteur']); ?></p>
         <p><strong>Année :</strong> <?= htmlspecialchars($livre['Annee']); ?></p>
-        <p><strong>Disponibilité :</strong> <?= $livre['disponible'] ? 'Disponible' : 'Indisponible'; ?></p>
+        <p><strong>Disponibilité :</strong> <?= ($livre['Disponibilite'] == 1 ? "oui" : "Non") ?></p>
+        
+        <a class= "return" href="index.php">← Retour à la liste</a>
+        </div>
 
-        <a href="index.php">← Retour à la liste</a>
+           <?php
+      include '../includes/footer.php';
+    ?>
     </body>
 </html>
