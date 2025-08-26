@@ -156,6 +156,32 @@ h2 {
 
 }
 
+.detailContainer {
+    width: 85%;
+    margin: 5% 0 5% 10%;
+    background: #fff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+
+}
+
+.return {
+   
+    background-color: #0077cc;
+    border-radius: 20px;
+    color: #f5f6f8 ;
+    padding: 10px 35px;
+    margin: 2% 0 2% 40%;
+    font-size: 15px;
+    border: none;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+   
+
+}
+
 /* ---------- MESSAGES ---------- */
 .alert {
     padding: 12px;
